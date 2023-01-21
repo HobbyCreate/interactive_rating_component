@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --Orange-color: hsl(25, 97%, 53%);
+  --White-color: hsl(0, 0%, 100%);
+  --LightGrey-color: hsl(217, 12%, 63%);
+  --MediumGrey-color: hsl(216, 12%, 54%);
+  --MDarkBlue-color: hsl(213, 16%, 26%);
+  --DarkBlue-color: hsl(213, 19%, 18%);
+  --VDarkBlue-color: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--VDarkBlue-color);
+  color: var(--White-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-container {
+  height: 350px;
+  width: 350px;
+  background-color: var(--DarkBlue-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rating-container img {
+  height: 20px;
+  width: 20px;
+  margin: 7% 0 10px 10%;
+  /* background-color: var(--VDarkBlue-color); */
+}
+
+.rating-container h2 {
+  margin: 15px 10%;
+  font-size: 1.6rem;
+}
+
+.rating-container p {
+  margin: 15px 10%;
+  text-align: start;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 15px 5%;
+}
+
+.scores .score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--MDarkBlue-color);
+  color: var(--MediumGrey-color);
+  border-radius: 50%;
+  border: none;
+  font-size: 1rem;
+}
+
+.scores .score:hover{
+  background-color: var(--MediumGrey-color);
+  color: var(--VDarkBlue-color);
+  cursor: pointer;
+} 
+
+.scores .score-selected {
+  background-color: var(--Orange-color);
+  color: var(--White-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background-color: var(--Orange-color);
+  color: var(--White-color);
+  font-weight: 700;
+  width: 90%;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px 5%;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: var(--White-color);
+  color: var(--Orange-color);
+  cursor: pointer;
+}

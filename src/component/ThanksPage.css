@@ -1,0 +1,29 @@
+.thanks-container {
+    height: 350px;
+    width: 350px;
+    background-color: var(--DarkBlue-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.thanks-container img {
+    margin-top: 20px;
+}
+
+.thanks-container .show-score {
+    color: var(--Orange-color);
+    background-color: var(--MDarkBlue-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.thanks-container h3 {
+    font-size: 1.6rem;
+}
+
+.thanks-container p {
+    margin: 10px 10%;
+}
